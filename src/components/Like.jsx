@@ -15,11 +15,11 @@ export default class Like extends Component {
     }
     render() {
         return (
-            !this.state.like?
-            <span className="icons" onClick={this.onLiked}>
+            !this.props.like?
+            <span className="icons" onClick={()=>this.props.handleLikeBtn(this.props.index)}>
                 <FavoriteBorderIcon className="text-danger"/>
             </span>:
-            <span className="icons" onClick={this.onLiked}>
+            <span className="icons" onClick={()=>this.props.handleLikeBtn(this.props.index)}>
                 <FavoriteIcon className="text-danger"/>
             </span>
         )
