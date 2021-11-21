@@ -18,3 +18,14 @@
 body{
   background-color: aliceblue;
 }
+th{
+  cursor: pointer;
+}
+.sort-icons-box{
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  color: white;
+  transform: scale(0.1);
+}
